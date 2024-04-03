@@ -22,7 +22,7 @@ const Page = () => {
     resolver: zodResolver(AuthCredentialsValidator),
   });
 
-  const { mutate, isLoading } = trpc.auth.createPayloadUser.useMutation({
+  const { mutate } = trpc.auth.createPayloadUser.useMutation({
 
   });
 

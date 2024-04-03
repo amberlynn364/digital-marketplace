@@ -4,7 +4,7 @@ export const Users: CollectionConfig = {
   slug: 'users',
   auth: {
     verify: {
-      generateEmailHTML: ({ token }) => {
+      generateEmailHTML: () => {
         return '<p>Hello pls verify</p>';
       },
     },
